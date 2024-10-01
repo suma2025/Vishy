@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Chess Opening Flowchart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .flowchart {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 500px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .node {
+            margin-left: 20px;
+            padding: 10px;
+            border-left: 2px solid #333;
+        }
+        .node::before {
+            content: "→ ";
+        }
+    </style>
+</head>
+<body>
+
+<div class="flowchart">
+    <h2>1. c4 e5</h2>
+    <div class="node">If 2. Nc3
+        <div class="node">2... Nc6
+            <div class="node">3. g3 then 3... g6</div>
+            <div class="node">3. Nf3 then 3... Nf6</div>
+        </div>
+        <div class="node">2... Nf6
+            <div class="node">3. Nf6 Nc4
+                <div class="node">4. e3 Bb4</div>
+            </div>
+        </div>
+    </div>
+    <div class="node">If 2. Nf3
+        <div class="node">2... e4
+            <div class="node">3. Nd4 Nc6 (unlikely)</div>
+        </div>
+    </div>
+    <div class="node">If 2. g3
+        <div class="node">2... Nc6
+            <div class="node">3. Bg2 g6</div>
+        </div>
+    </div>
+    <div class="node">If 2. d3
+        <div class="node">2... Bb4+
+            <div class="node">3. Bd2 Bxd2
+                <div class="node">4. Qxd2 d6</div>
+            </div>
+            <div class="node">3. Nb2 c5</div>
+            <div class="node">3. Nc3 Nc6</div>
+        </div>
+    </div>
+    <div class="node">If 2. e3
+        <div class="node">2... Nf6</div>
+    </div>
+</div>
+
+</body>
+</html>
